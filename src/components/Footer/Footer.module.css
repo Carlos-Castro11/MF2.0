@@ -104,3 +104,10 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 650px) {
+  .clients,
+  .devs {
+    font-size: 0.65rem;
+  }
+}

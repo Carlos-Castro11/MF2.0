@@ -198,6 +198,12 @@ iframe {
   }
 }
 
+@media (max-width: 650px) {
+  .adText {
+    font-size: 3rem;
+  }
+}
+
 /* LOCAL ==========================================================*/
 @media (max-width: 750px) {
   .localText {

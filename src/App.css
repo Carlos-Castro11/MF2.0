@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* COLORS =================================*/
+:root {
+  --blueP: #15acfc;
+  --blackT: #333333;
+  --blueD: #032030;
+  --yellow: #e4cc25;
+  --yellow2: #bda719;
+  --white: #ffffff;
+  --gray: rgb(48, 45, 45);
+  --type-second: "Poppins", Arial, Helvetica, sans-serif;
+  --type-first: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--type-first);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3 {
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 3rem;
+  border-bottom: 4px solid var(--blueP);
+  color: var(--blackT);
+  width: max-content;
+  margin-bottom: 4rem;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: anime 0.3s forwards;
+}
+
+@keyframes anime {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+/* REPONSIVE ========================================================================== */
+@media (max-width: 1150px) {
+  .sectionTitle {
+    font-size: 2.7rem;
+    margin-bottom: 3.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 }

@@ -1,0 +1,214 @@
+/* ABOUT ======================================================*/
+.about {
+  margin-bottom: 3rem;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.aboutImgStyle {
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px black;
+}
+
+.aboutText {
+  text-align: left;
+}
+
+.aboutText h2 {
+  font-size: 2.2rem;
+  color: var(--blueD);
+}
+
+.aboutText p {
+  font-size: 1.3rem;
+  color: var(--gray);
+}
+
+/* AD ======================================================*/
+.ad {
+  background: var(--blueP);
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px black;
+  margin-bottom: 3rem;
+}
+
+.adContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.adText {
+  font-size: 3.7rem;
+}
+
+.adText p {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+.adImgStyle {
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px black;
+}
+
+/* LOCAL ======================================================*/
+.local {
+  margin-bottom: 3rem;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.localText {
+  color: var(--gray);
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.localText p {
+  margin: 0;
+}
+
+.city {
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+
+/* RESPONSIVE =============================================================================*/
+
+/* ABOUT ======================================================*/
+@media (max-width: 1100px) {
+  .aboutText h2 {
+    font-size: 2.1rem;
+  }
+
+  .aboutText p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutText h2 {
+    font-size: 1.95rem;
+  }
+
+  .aboutText p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutText h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutText h2 {
+    font-size: 1.45rem;
+  }
+
+  .aboutText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .aboutContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .aboutText h2 {
+    font-size: 1.7rem;
+  }
+
+  .aboutText p {
+    font-size: 1.1rem;
+  }
+
+  .about {
+    margin-bottom: 1rem;
+  }
+}
+
+/* AD ==========================================================*/
+
+@media (max-width: 1150px) {
+  .adText {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .adText {
+    font-size: 2.5rem;
+  }
+
+  .adText p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .adText {
+    font-size: 2.3rem;
+  }
+
+  .adText p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .adContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .adText {
+    font-size: 3.2rem;
+  }
+
+  .adText p {
+    display: none;
+  }
+
+  .ad {
+    margin-bottom: 1rem;
+  }
+}
+
+/* LOCAL ==========================================================*/
+@media (max-width: 750px) {
+  .localText {
+    font-size: 1.8rem;
+  }
+
+  .city {
+    font-size: 1.05rem;
+  }
+
+  .local {
+    margin-bottom: 1rem;
+  }
+}

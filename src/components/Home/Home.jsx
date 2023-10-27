@@ -1,0 +1,86 @@
+import React from "react";
+import styles from "./Home.module.css";
+
+import Slider from "../Slider/Slider";
+
+// HOOKS
+import useMedia from "../../Hooks/useMedia";
+
+// IMAGES
+import aboutImg from "../../assets/images/sobre.jpg";
+import adImg from "../../assets/images/ad.jpg";
+
+const Home = () => {
+  const mobile = useMedia("(max-width: 750px)");
+
+  return (
+    <>
+      <Slider />
+      <main className={`animeLeft`}>
+        {/* ABOUT */}
+        <div className={`${styles.about} container`}>
+          <h1 className="sectionTitle">SOBRE</h1>
+          <div className={styles.aboutContent}>
+            <img className={styles.aboutImgStyle} src={aboutImg} alt="" />
+            <div className={styles.aboutText}>
+              <h2>A Marques & Finelli Empreendimentos Imobiliários</h2>
+              <p>
+                Surgiu em 2001 no estado de São Paulo, com o desejo de realizar
+                empreendimentos que atendam as necessidades diárias do usuário
+                juntamente com a concepção de qualidade e estética na
+                construção, prezando por ambientes funcionais que gerem
+                qualidade de vida e bem estar, a fim de gerar mais valor aos
+                imóveis.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* AD */}
+        <div className={styles.ad}>
+          <div className={`${styles.adContent} container`}>
+            <div className={styles.adText}>
+              {mobile ? (
+                <span>
+                  Garanta uma <br />
+                  <strong>melhor construção</strong> {""}
+                  com a<br />
+                  <strong>melhor qualidade</strong>
+                </span>
+              ) : (
+                <span>
+                  Garanta uma <br />
+                  <strong>melhor construção</strong> <br />
+                  com a<br />
+                  <strong>melhor qualidade</strong>
+                </span>
+              )}
+              <p>Confira a localização abaixo</p>
+            </div>
+            <img className={styles.adImgStyle} src={adImg} alt="" />
+          </div>
+        </div>
+        {/* LOCAL */}
+        <div className={`${styles.local} container`}>
+          <h1 className="sectionTitle">LOCALIZAÇÃO</h1>
+          <iframe
+            className="map"
+            width="600"
+            height="400"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=,%20395B%20-%20Lino%20Coutinho%%20Jardim%20Liberdade,%20Montes%20Claros%20-%20MG,%2039408-009&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <div className={styles.localText}>
+            <p>Rua Lino Coutinho - 395B - Jardim Liberdade</p>
+            <p className={styles.city}>Montes Claros - MG</p>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Home;

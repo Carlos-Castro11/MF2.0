@@ -8,7 +8,6 @@ import teste3 from "../../assets/images/render/LANÇAMENTO09.jpg";
 import teste4 from "../../assets/images/render/LANÇAMENTO07.jpg";
 
 // HOOKS
-import useMedia from "../../Hooks/useMedia";
 
 const slides = [
   { id: "1", image: teste },

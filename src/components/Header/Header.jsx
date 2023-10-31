@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 // Hooks
 import useMedia from "../../Hooks/useMedia";
@@ -56,14 +57,14 @@ const Header = () => {
                 Início
               </li>
             </a>
-            <a href="">
+            <Link to="/enterprises">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
                 {mobile && <img src={money} alt="money icon" />}
                 Empreendimentos
               </li>
-            </a>
+            </Link>
             <a href="">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}

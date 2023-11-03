@@ -25,15 +25,21 @@ const Header = () => {
     window.addEventListener("scroll", () => {
       setMobileActive(false);
     });
+
+    return () => {
+      window.removeEventListener("scroll", () => {
+        setMobileActive(false);
+      });
+    };
   }, []);
 
   return (
     <>
       <header className={`${styles.header}`} id="header">
         <div className={styles.logo}>
-          <a href="">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className={`${mobile ? styles.navMobile : styles.nav}`}>
           {mobile && (
@@ -49,14 +55,14 @@ const Header = () => {
               mobileActive && styles.navListMobileActive
             }`}
           >
-            <a href="">
+            <Link to="/">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
                 {mobile && <img src={house} alt="house icon" />}
                 Início
               </li>
-            </a>
+            </Link>
             <Link to="/enterprises">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}

@@ -17,19 +17,27 @@ const Footer = () => {
           </div>
           <div className={styles.contact}>
             <ul className={styles.contactList}>
-              <a target="_blank" href="https://wa.me/5538999178079">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://wa.me/5538999178079"
+              >
                 <li className={styles.contactItem}>
                   <img src={whatsapp} alt="" />
                   <span>(38) 9 9917-8079</span>
                 </li>
               </a>
-              <a target="_blank" href="https://instagram.com">
+              <a target="_blank" rel="noreferrer" href="https://instagram.com">
                 <li className={styles.contactItem}>
                   <img src={instagram} alt="" />
-                  <span>@marquesfinelliemp</span>
+                  <span>@marques&finelli_empreendimentos</span>
                 </li>
               </a>
-              <a target="_blank" href="mailto: marquesefinelli@gmail.com">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto: marquesefinelli@gmail.com"
+              >
                 <li className={styles.contactItem}>
                   <img src={email} alt="" />
                   <span>marquesefinelliemp@gmail.com</span>

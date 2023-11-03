@@ -1,3 +1,39 @@
-h1 {
-  color: red;
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: 4px solid var(--blueP);
+  color: var(--blackT);
+  width: max-content;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
+
+/* IMAGES ======================================================================*/
+
+.houseContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.mainImg img {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 2px black;
+  margin-bottom: 2.5rem;
+}
+
+.smallImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.smallImg img {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px black;
+}
+
+/* TEXT ======================================================================*/

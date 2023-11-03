@@ -1,6 +1,6 @@
 import React from "react";
 
-import houses from "../../Enterprise.js";
+import housesEnterprises from "../../Enterprise.js";
 
 import Base from "../Base/Base";
 import HouseBase from "../HouseBase/HouseBase";
@@ -13,9 +13,15 @@ const Enterprises = () => {
       <Routes>
         <Route
           path="/"
-          element={<Base houses={houses} titlePage={"Empreendimentos"} />}
+          element={
+            <Base houses={housesEnterprises} titlePage={"Empreendimentos"} />
+          }
         />
-        <Route exact path="/:id" element={<HouseBase houses={houses} />} />
+        <Route
+          exact
+          path="/:id"
+          element={<HouseBase houses={housesEnterprises} />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

@@ -2,10 +2,23 @@ import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import styles from "./HouseBase.module.css";
 
-const HouseBase = ({ houses }) => {
-  const { id } = useParams();
+import PopUp from "../PopUp/PopUp";
 
+// CONTEXT
+import { PopUpContext } from "../../PopUpContext";
+
+const HouseBase = ({ houses }) => {
+  const { popUpActive } = React.useContext(PopUpContext);
+  const { setPopUpActive } = React.useContext(PopUpContext);
+  const { id } = useParams();
+  const newImg = React.useRef();
   const [activeImg, setActiveImg] = React.useState(houses[id].front_img);
+
+  React.useEffect(() => {
+    newImg.current.addEventListener("click", () => {
+      setPopUpActive(true);
+    });
+  }, []);
 
   function handleClick(e) {
     let img_src = e.target.src;
@@ -15,12 +28,13 @@ const HouseBase = ({ houses }) => {
   if (id > houses.length - 1) return <Navigate to="/" />;
   return (
     <>
+      {popUpActive ? <PopUp src={activeImg} /> : null}
       <section className="container">
         <h1 className={styles.title}>{houses[id].name}</h1>
         <div className={styles.houseContent}>
           <div className={styles.houseImg}>
             <div className={styles.mainImg}>
-              <img src={activeImg} alt="" />
+              <img ref={newImg} src={activeImg} alt="" />
             </div>
             <div className={styles.smallImg}>
               {houses[id].imgs.map((item) => (

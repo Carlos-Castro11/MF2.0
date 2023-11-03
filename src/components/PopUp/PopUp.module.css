@@ -1,0 +1,43 @@
+.popUp {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 99999999999999;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+
+.popUpImage {
+  max-width: 70%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 2px white;
+}
+
+.btn {
+  position: fixed;
+  cursor: pointer;
+  top: 2rem;
+  right: 0rem;
+  margin-right: 5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  width: 30px;
+  border: none;
+}
+
+@media (max-width: 750px) {
+  .popUpImage {
+    max-width: 100%;
+  }
+  .popUp {
+    padding: 1rem;
+  }
+  .btn {
+    right: -3rem;
+  }
+}

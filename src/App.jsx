@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// CONTEXT
+import { PopUpStorage } from "./PopUpContext";
+
 // COMPONENTS
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
@@ -13,13 +16,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/enterprises/*" element={<Enterprises />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+        <PopUpStorage>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/enterprises/*" element={<Enterprises />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </PopUpStorage>
       </BrowserRouter>
     </>
   );

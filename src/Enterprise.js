@@ -49,7 +49,6 @@ let housesEnterprises = [
     building_area: "280m²",
     land_area: "180m²",
     imgs: [
-      img1_house3,
       img1_house2,
       img1_house3,
       img1_house2,
@@ -58,6 +57,7 @@ let housesEnterprises = [
       img1_house2,
       img1_house3,
       img1_house2,
+      img1_house3,
     ],
   },
   {

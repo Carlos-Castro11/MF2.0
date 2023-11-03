@@ -5,6 +5,13 @@ import styles from "./HouseBase.module.css";
 const HouseBase = ({ houses }) => {
   const { id } = useParams();
 
+  const [activeImg, setActiveImg] = React.useState(houses[id].front_img);
+
+  function handleClick(e) {
+    let img_src = e.target.src;
+    setActiveImg(img_src);
+  }
+
   if (id > houses.length - 1) return <Navigate to="/" />;
   return (
     <>
@@ -13,12 +20,12 @@ const HouseBase = ({ houses }) => {
         <div className={styles.houseContent}>
           <div className={styles.houseImg}>
             <div className={styles.mainImg}>
-              <img src={houses[id].front_img} alt="" />
+              <img src={activeImg} alt="" />
             </div>
             <div className={styles.smallImg}>
               {houses[id].imgs.map((item) => (
                 <div>
-                  <img src={item} alt="" />
+                  <img onClick={handleClick} src={item} alt="" />
                 </div>
               ))}
             </div>

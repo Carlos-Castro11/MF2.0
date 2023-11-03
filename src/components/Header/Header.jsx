@@ -37,7 +37,7 @@ const Header = () => {
     <>
       <header className={`${styles.header}`} id="header">
         <div className={styles.logo}>
-          <Link to="/">
+          <Link onClick={() => setMobileActive(false)} to="/">
             <img src={logo} alt="logo" />
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
               mobileActive && styles.navListMobileActive
             }`}
           >
-            <Link to="/">
+            <Link onClick={() => setMobileActive(false)} to="/">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
@@ -63,7 +63,7 @@ const Header = () => {
                 Início
               </li>
             </Link>
-            <Link to="/enterprises">
+            <Link onClick={() => setMobileActive(false)} to="/enterprises">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
@@ -71,7 +71,7 @@ const Header = () => {
                 Empreendimentos
               </li>
             </Link>
-            <a href="">
+            <a onClick={() => setMobileActive(false)}>
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
@@ -79,7 +79,7 @@ const Header = () => {
                 Lançamentos
               </li>
             </a>
-            <a href="">
+            <a onClick={() => setMobileActive(false)}>
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >
@@ -87,7 +87,7 @@ const Header = () => {
                 Futuros Projetos
               </li>
             </a>
-            <a href="#footer">
+            <a onClick={() => setMobileActive(false)} href="#footer">
               <li
                 className={`${mobile ? styles.navItemMobile : styles.navItem}`}
               >

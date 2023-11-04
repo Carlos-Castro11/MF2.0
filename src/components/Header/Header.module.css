@@ -55,7 +55,7 @@
 /* MOBILE ==========================================================*/
 .navMobile {
   display: flex;
-  place-content: end;
+  place-content: flex-end;
 }
 
 .menuMobile {

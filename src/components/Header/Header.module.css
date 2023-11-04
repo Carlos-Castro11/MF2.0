@@ -8,6 +8,7 @@
 .headerContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   place-content: center;
 }
 
@@ -171,6 +172,7 @@
 
   .headerContent {
     display: grid;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     width: 100%;
   }

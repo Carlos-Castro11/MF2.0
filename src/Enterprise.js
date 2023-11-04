@@ -13,7 +13,8 @@ import img1_house3 from "./assets/images/casa11A/CASA05-10.jpg";
 let housesEnterprises = [
   {
     id: 0,
-    name: "testeNovamente",
+    name: `casa 12`,
+    neighborhood: "jd. liberdade",
     type: "enterprises",
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
     ducimus hic error velit libero aut tempora ut porro iste
@@ -57,12 +58,13 @@ let housesEnterprises = [
       img1_house2,
       img1_house3,
       img1_house2,
-      img1_house3,
+      img1_house1,
     ],
   },
   {
     id: 1,
-    name: "teste2",
+    name: "casa 13d",
+    neighborhood: "ibituruna",
     type: "enterprises",
     front_img: house2_front,
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
@@ -91,7 +93,6 @@ let housesEnterprises = [
     officia illum quam exercitationem alias, quibusdam nemo facilis,
     laboriosam distinctio incidunt? Possimus modi iusto amet id
     aliquid quaerat dolorem voluptatibus.`,
-    front_img: house1_front,
     rooms: 5,
     bathrooms: 2,
     class: 3,
@@ -112,7 +113,8 @@ let housesEnterprises = [
   },
   {
     id: 2,
-    name: "teste5",
+    name: "casa 876d",
+    neighborhood: "são luiz",
     type: "enterprises",
     front_img: house3_front,
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
@@ -141,7 +143,6 @@ let housesEnterprises = [
     officia illum quam exercitationem alias, quibusdam nemo facilis,
     laboriosam distinctio incidunt? Possimus modi iusto amet id
     aliquid quaerat dolorem voluptatibus.`,
-    front_img: house1_front,
     rooms: 5,
     bathrooms: 2,
     class: 3,

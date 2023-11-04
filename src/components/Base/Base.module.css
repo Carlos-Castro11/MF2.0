@@ -20,3 +20,268 @@
   border-radius: 0.5rem;
   box-shadow: 0px 0px 2px black;
 }
+
+/* HOVER EFFECT AT IMAGES =============================================================*/
+.image {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+
+.image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.image:hover::before {
+  opacity: 0.8;
+}
+
+.image > h2 {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.3rem;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+}
+
+.neighborhood {
+  color: var(--yellow);
+}
+
+.image:hover > h2 {
+  opacity: 1;
+}
+
+/* BORDER HOVER EFFECT AT IMAGES =============================================================*/
+
+/* BORDER-LEFT */
+.image .border4::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  left: 8%;
+  bottom: 33%;
+  background-color: var(--yellow);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.image:hover .border4::before {
+  height: 32%;
+}
+
+/* BORDER-TOP */
+.image .border3::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 8%;
+  top: 35%;
+  background-color: var(--yellow);
+  transition: all 0.3s ease-in-out;
+}
+
+.image:hover .border3::before {
+  width: 84%;
+}
+
+/* BORDER-RIGHT */
+.image .border2::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  right: 8%;
+  bottom: 33%;
+  background-color: var(--yellow);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.image:hover .border2::before {
+  height: 32%;
+}
+
+/* BORDER-BOTTOM */
+.image .border1::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 8%;
+  bottom: 33%;
+  background-color: var(--yellow);
+  transition: all 0.3s ease-in-out;
+}
+
+.image:hover .border1::before {
+  width: 84%;
+}
+
+/* RESPONSIVE =============================================================*/
+@media (max-width: 850px) {
+  .image > h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+  }
+
+  .bodyContent {
+    gap: 2rem;
+  }
+
+  .image > h2 {
+    font-size: 1.4rem;
+    opacity: 1;
+  }
+
+  .image::before {
+    opacity: 0.8;
+  }
+
+  /* BORDER-LEFT =================================*/
+  .image .border4::before {
+    height: 32%;
+    width: 2px;
+    left: 8%;
+    bottom: 33%;
+  }
+
+  .image:hover .border4::before {
+    height: 32%;
+  }
+
+  /* BORDER-TOP =================================*/
+  .image .border3::before {
+    height: 2px;
+    width: 84%;
+    left: 8%;
+    top: 35%;
+  }
+
+  .image:hover .border3::before {
+    width: 84%;
+  }
+
+  /* BORDER-RIGHT =================================*/
+  .image .border2::before {
+    height: 32%;
+    width: 2px;
+    right: 8%;
+    bottom: 33%;
+  }
+
+  .image:hover .border2::before {
+    height: 32%;
+  }
+
+  /* BORDER-BOTTOM =================================*/
+  .image .border1::before {
+    height: 2px;
+    width: 84%;
+    left: 8%;
+    bottom: 33%;
+  }
+
+  .image:hover .border1::before {
+    width: 84%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .bodyContent {
+    gap: 1.8rem;
+  }
+
+  .image > h2 {
+    font-size: 1.275rem;
+  }
+
+  /* BORDER-LEFT =================================*/
+  .image .border4::before {
+    height: 70%;
+    width: 2px;
+    left: 8%;
+    bottom: 15%;
+  }
+
+  .image:hover .border4::before {
+    height: 70%;
+  }
+
+  /* BORDER-TOP =================================*/
+  .image .border3::before {
+    height: 2px;
+    width: 84%;
+    left: 8%;
+    top: 15%;
+  }
+
+  .image:hover .border3::before {
+    width: 84%;
+  }
+
+  /* BORDER-RIGHT =================================*/
+  .image .border2::before {
+    height: 70%;
+    width: 2px;
+    right: 8%;
+    bottom: 15%;
+  }
+
+  .image:hover .border2::before {
+    height: 70%;
+  }
+
+  /* BORDER-BOTTOM =================================*/
+  .image .border1::before {
+    height: 2px;
+    width: 84%;
+    left: 8%;
+    bottom: 15%;
+  }
+
+  .image:hover .border1::before {
+    width: 84%;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .bodyContent {
+    gap: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .image > h2 {
+    font-size: 1rem;
+  }
+}

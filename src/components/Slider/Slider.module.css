@@ -46,3 +46,9 @@
     margin: 0rem auto;
   }
 }
+
+@media (min-width: 1500px) {
+  .containerSlider {
+    max-width: 90rem;
+  }
+}

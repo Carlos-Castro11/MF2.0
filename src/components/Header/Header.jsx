@@ -36,66 +36,78 @@ const Header = () => {
   return (
     <>
       <header className={`${styles.header}`} id="header">
-        <div className={styles.logo}>
-          <Link onClick={() => setMobileActive(false)} to="/">
-            <img src={logo} alt="logo" />
-          </Link>
-        </div>
-        <div className={`${mobile ? styles.navMobile : styles.nav}`}>
-          {mobile && (
-            <button
-              onClick={changeMobileActive}
-              className={`${styles.menuMobile} ${
-                mobileActive && styles.menuMobileActive
-              }`}
-            ></button>
-          )}
-          <ul
-            className={`${mobile ? styles.navListMobile : styles.navList} ${
-              mobileActive && styles.navListMobileActive
-            }`}
-          >
+        <div className={`container ${styles.headerContent}`}>
+          <div className={styles.logo}>
             <Link onClick={() => setMobileActive(false)} to="/">
-              <li
-                className={`${mobile ? styles.navItemMobile : styles.navItem}`}
-              >
-                {mobile && <img src={house} alt="house icon" />}
-                Início
-              </li>
+              <img src={logo} alt="logo" />
             </Link>
-            <Link onClick={() => setMobileActive(false)} to="/enterprises">
-              <li
-                className={`${mobile ? styles.navItemMobile : styles.navItem}`}
-              >
-                {mobile && <img src={money} alt="money icon" />}
-                Empreendimentos
-              </li>
-            </Link>
-            <a onClick={() => setMobileActive(false)}>
-              <li
-                className={`${mobile ? styles.navItemMobile : styles.navItem}`}
-              >
-                {mobile && <img src={tools} alt="tools icon" />}
-                Lançamentos
-              </li>
-            </a>
-            <a onClick={() => setMobileActive(false)}>
-              <li
-                className={`${mobile ? styles.navItemMobile : styles.navItem}`}
-              >
-                {mobile && <img src={project} alt="projects icon" />}
-                Futuros Projetos
-              </li>
-            </a>
-            <a onClick={() => setMobileActive(false)} href="#footer">
-              <li
-                className={`${mobile ? styles.navItemMobile : styles.navItem}`}
-              >
-                {mobile && <img src={contact} alt="contact icon" />}
-                Contato
-              </li>
-            </a>
-          </ul>
+          </div>
+          <div className={`${mobile ? styles.navMobile : styles.nav}`}>
+            {mobile && (
+              <button
+                onClick={changeMobileActive}
+                className={`${styles.menuMobile} ${
+                  mobileActive && styles.menuMobileActive
+                }`}
+              ></button>
+            )}
+            <ul
+              className={`${mobile ? styles.navListMobile : styles.navList} ${
+                mobileActive && styles.navListMobileActive
+              }`}
+            >
+              <Link onClick={() => setMobileActive(false)} to="/">
+                <li
+                  className={`${
+                    mobile ? styles.navItemMobile : styles.navItem
+                  }`}
+                >
+                  {mobile && <img src={house} alt="house icon" />}
+                  Início
+                </li>
+              </Link>
+              <Link onClick={() => setMobileActive(false)} to="/enterprises">
+                <li
+                  className={`${
+                    mobile ? styles.navItemMobile : styles.navItem
+                  }`}
+                >
+                  {mobile && <img src={money} alt="money icon" />}
+                  Empreendimentos
+                </li>
+              </Link>
+              <a onClick={() => setMobileActive(false)}>
+                <li
+                  className={`${
+                    mobile ? styles.navItemMobile : styles.navItem
+                  }`}
+                >
+                  {mobile && <img src={tools} alt="tools icon" />}
+                  Lançamentos
+                </li>
+              </a>
+              <a onClick={() => setMobileActive(false)}>
+                <li
+                  className={`${
+                    mobile ? styles.navItemMobile : styles.navItem
+                  }`}
+                >
+                  {mobile && <img src={project} alt="projects icon" />}
+                  Futuros Projetos
+                </li>
+              </a>
+              <a onClick={() => setMobileActive(false)} href="#footer">
+                <li
+                  className={`${
+                    mobile ? styles.navItemMobile : styles.navItem
+                  }`}
+                >
+                  {mobile && <img src={contact} alt="contact icon" />}
+                  Contato
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
       </header>
     </>

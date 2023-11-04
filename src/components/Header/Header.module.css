@@ -180,3 +180,9 @@
     visibility: hidden;
   }
 }
+
+@media (min-width: 1500px) {
+  .headerContent {
+    gap: 10rem;
+  }
+}

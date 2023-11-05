@@ -13,6 +13,8 @@ import NotFound from "./components/NotFound/NotFound";
 import Enterprises from "./components/Enterprises/Enterprises";
 import Releases from "./components/Releases/Releases";
 import FutureProjects from "./components/FutureProjects/FutureProjects";
+import WppBtn from "./components/WppBtn/WppBtn";
+import ToTopBtn from "./components/ToTopBtn/ToTopBtn";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="/futureProjects/*" element={<FutureProjects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <WppBtn />
+          <ToTopBtn />
           <Footer />
         </PopUpStorage>
       </BrowserRouter>

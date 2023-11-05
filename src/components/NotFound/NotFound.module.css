@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   place-content: center;
+  background: purple;
 }
 
 .title {
@@ -17,6 +18,7 @@
   flex-direction: column;
   place-content: center;
   align-items: center;
+  background: orange;
 }
 
 .title span {

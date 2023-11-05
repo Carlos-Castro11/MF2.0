@@ -7,7 +7,6 @@ const NotFound = () => {
       <h1 className={styles.title}>
         <span>ERROR 404 </span> PÁGINA NÃO ENCONTRADA
       </h1>
-      ;
     </div>
   );
 };

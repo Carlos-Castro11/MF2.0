@@ -76,7 +76,7 @@ const Header = () => {
                   Empreendimentos
                 </li>
               </Link>
-              <a onClick={() => setMobileActive(false)}>
+              <Link onClick={() => setMobileActive(false)} to="/releases">
                 <li
                   className={`${
                     mobile ? styles.navItemMobile : styles.navItem
@@ -85,8 +85,8 @@ const Header = () => {
                   {mobile && <img src={tools} alt="tools icon" />}
                   Lançamentos
                 </li>
-              </a>
-              <a onClick={() => setMobileActive(false)}>
+              </Link>
+              <Link onClick={() => setMobileActive(false)} to="/futureProjects">
                 <li
                   className={`${
                     mobile ? styles.navItemMobile : styles.navItem
@@ -95,7 +95,7 @@ const Header = () => {
                   {mobile && <img src={project} alt="projects icon" />}
                   Futuros Projetos
                 </li>
-              </a>
+              </Link>
               <a onClick={() => setMobileActive(false)} href="#footer">
                 <li
                   className={`${

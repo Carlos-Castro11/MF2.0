@@ -10,12 +10,12 @@ import img1_house2 from "./assets/images/casa11A/CASA05-03.jpg";
 import house3_front from "./assets/images/futureProjects/F2/F2-1.jpg";
 import img1_house3 from "./assets/images/casa11A/CASA05-10.jpg";
 
-let housesEnterprises = [
+let housesReleases = [
   {
     id: 0,
-    name: `casa 12`,
+    name: `CRUZEIRO`,
     neighborhood: "jd. liberdade",
-    type: "enterprises",
+    type: "releases",
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
     ducimus hic error velit libero aut tempora ut porro iste
     distinctio quos repellat consequuntur, ea commodi illum optio
@@ -56,9 +56,9 @@ let housesEnterprises = [
   },
   {
     id: 1,
-    name: "casa 13d",
+    name: "oi",
     neighborhood: "ibituruna",
-    type: "enterprises",
+    type: "releases",
     front_img: house2_front,
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
     ducimus hic error velit libero aut tempora ut porro iste
@@ -108,7 +108,7 @@ let housesEnterprises = [
     id: 2,
     name: "casa 876d",
     neighborhood: "são luiz",
-    type: "enterprises",
+    type: "releases",
     front_img: house3_front,
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
     ducimus hic error velit libero aut tempora ut porro iste
@@ -156,4 +156,4 @@ let housesEnterprises = [
   },
 ];
 
-export default housesEnterprises;
+export default housesReleases;

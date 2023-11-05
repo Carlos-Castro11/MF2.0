@@ -68,10 +68,9 @@ const Home = () => {
             height="400"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=,%20395B%20-%20Lino%20Coutinho%%20Jardim%20Liberdade,%20Montes%20Claros%20-%20MG,%2039408-009&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
           ></iframe>
           <div className={styles.localText}>
             <p>Rua Lino Coutinho - 395B - Jardim Liberdade</p>

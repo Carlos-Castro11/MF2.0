@@ -11,6 +11,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/NotFound/NotFound";
 import Enterprises from "./components/Enterprises/Enterprises";
+import Releases from "./components/Releases/Releases";
+import FutureProjects from "./components/FutureProjects/FutureProjects";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/enterprises/*" element={<Enterprises />} />
+            <Route path="/releases/*" element={<Releases />} />
+            <Route path="/futureProjects/*" element={<FutureProjects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

@@ -20,7 +20,7 @@
 .mainImg img {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 2px black;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -47,12 +47,78 @@
   transform: scale(1.065);
 }
 
-/* TEXT ======================================================================*/
+/* TEXT ============================================================================*/
+.houseInfo h3 {
+  font-size: 2rem;
+  color: var(--blueD);
+}
+
+.infoText {
+  color: var(--blackT);
+  font-size: 1.1rem;
+}
+.details h5 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--blueD);
+}
+.details p {
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--blueD);
+  color: var(--blueD);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.details p:nth-child(7) {
+  border: none;
+}
 
 /* RESPONSIVE ======================================================================*/
 @media (max-width: 750px) {
   .houseContent {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .mainImg img {
+    margin-bottom: 2rem;
+  }
+
+  .smallImg {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .details h5 {
+    font-size: 1.3rem;
+  }
+
+  .details p {
+    font-size: 1.1rem;
   }
 }

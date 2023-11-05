@@ -9,7 +9,7 @@ const Base = ({ houses, titlePage }) => {
         <h1 className={styles.title}>{titlePage}</h1>
         <div className={styles.bodyContent}>
           {houses.map((house) => (
-            <Link to={`/${house.type}/${house.id}`}>
+            <Link key={house.id} to={`/${house.type}/${house.id}`}>
               <div className={styles.image} key={house.id}>
                 <img className={styles.bodyImg} src={house.front_img} alt="" />
                 <span className={styles.border1}></span>

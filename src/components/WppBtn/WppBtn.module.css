@@ -9,3 +9,9 @@
   width: 4rem;
   filter: drop-shadow(0px 0px 2px black);
 }
+
+@media (max-width: 500px) {
+  .wppBtn img {
+    width: 3.5rem;
+  }
+}

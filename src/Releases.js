@@ -3,12 +3,12 @@ import house1_front from "./assets/images/render/lançamento-capa.jpg";
 import img1_house1 from "./assets/images/render/LANÇAMENTO02.jpg";
 
 // HOUSE 2 ==========================================================================
-import house2_front from "./assets/images/casa11A/CASA05-CAPA.jpg";
-import img1_house2 from "./assets/images/casa11A/CASA05-03.jpg";
+import house2_front from "./assets/images/CASA-11A/front_11A.jpg";
+import img1_house2 from "./assets/images/CASA-11A/2.jpg";
 
 // HOUSE 3 ==========================================================================
 import house3_front from "./assets/images/futureProjects/F2/F2-1.jpg";
-import img1_house3 from "./assets/images/casa11A/CASA05-10.jpg";
+import img1_house3 from "./assets/images/CASA-11A/5.jpg";
 
 let housesReleases = [
   {

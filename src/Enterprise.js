@@ -33,8 +33,22 @@ import img10_house2 from "./assets/images/CASA-11A/10.jpg";
 import img11_house2 from "./assets/images/CASA-11A/11.jpg";
 
 // HOUSE 3 ==========================================================================
-import house3_front from "./assets/images/futureProjects/F2/F2-1.jpg";
-import img1_house3 from "./assets/images/CASA-11A/8.jpg";
+import house3_front from "./assets/images/CASA-11B/house3_front.jpg";
+import img1_house3 from "./assets/images/CASA-11B/house3_front.jpg";
+import img2_house3 from "./assets/images/CASA-11B/3.jpg";
+import img3_house3 from "./assets/images/CASA-11B/3.jpg";
+import img4_house3 from "./assets/images/CASA-11B/4.jpg";
+import img5_house3 from "./assets/images/CASA-11B/5.jpg";
+import img7_house3 from "./assets/images/CASA-11B/7.jpg";
+import img8_house3 from "./assets/images/CASA-11B/8.jpg";
+import img9_house3 from "./assets/images/CASA-11B/9.jpg";
+import img10_house3 from "./assets/images/CASA-11B/10.jpg";
+import img11_house3 from "./assets/images/CASA-11B/11.jpg";
+import img12_house3 from "./assets/images/CASA-11B/12.jpg";
+import img13_house3 from "./assets/images/CASA-11B/13.jpg";
+import img14_house3 from "./assets/images/CASA-11B/14.jpg";
+import img15_house3 from "./assets/images/CASA-11B/15.jpg";
+import img16_house3 from "./assets/images/CASA-11B/16.jpg";
 
 let housesEnterprises = [
   {
@@ -83,7 +97,7 @@ let housesEnterprises = [
   },
   {
     id: 1,
-    name: "casa 11A",
+    name: "casa 11a",
     neighborhood: "jd. liberdade",
     type: "enterprises",
     front_img: house2_front,
@@ -118,36 +132,19 @@ let housesEnterprises = [
   },
   {
     id: 2,
-    name: "casa 876d",
-    neighborhood: "são luiz",
+    name: "casa 11b",
+    neighborhood: "jd. liberdade",
     type: "enterprises",
     front_img: house3_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minima enim ipsa dolorum voluptates neque
-    sit, dicta voluptate aliquam debitis, eius ducimus! Nemo non porro
-    excepturi? Explicabo pariatur consequatur nisi aliquid officiis
-    earum minima debitis doloribus vitae quae aperiam excepturi ipsa
-    quod, in quaerat accusamus ea facilis adipisci perferendis
-    repudiandae, repellendus maiores asperiores. Dolore, corrupti
-    provident? Excepturi suscipit alias, veniam sunt error tenetur
-    autem harum laudantium ullam inventore adipisci velit vitae omnis
-    corrupti libero amet ipsum expedita repellat dignissimos eligendi
-    iure nihil. Aliquam quasi quis temporibus. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Sed, ducimus hic error velit
-    libero aut tempora ut porro iste distinctio quos repellat
-    consequuntur, ea commodi illum optio omnis modi voluptatum.
-    Commodi ex eos numquam enim dicta eum? Ducimus rem cum recusandae
-    distinctio. Vero, quis quidem. Corrupti dolorum, dicta ducimus
-    officia illum quam exercitationem alias, quibusdam nemo facilis,
-    laboriosam distinctio incidunt? Possimus modi iusto amet id
-    aliquid quaerat dolorem voluptatibus.`,
+    about: `Casa nova de alto padrão no Jardim Liberdade!
+
+    Casa com 3 dormitórios, sendo uma suíte com armário e 2 semi-suítes no primeiro pavimento; sala para dois ambientes, lavabo, cozinha com armários e área de serviço coberta com armários e espaço gourmet no térreo. 2 vagas de garagem.
+    
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    📱(38) 9 9917-8079.`,
     rooms: 5,
     bathrooms: 2,
     class: 3,
@@ -155,15 +152,21 @@ let housesEnterprises = [
     building_area: "280m²",
     land_area: "180m²",
     imgs: [
-      img1_house2,
       img1_house3,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
+      img2_house3,
+      img3_house3,
+      img4_house3,
+      img5_house3,
+      img7_house3,
+      img8_house3,
+      img9_house3,
+      img10_house3,
+      img11_house3,
+      img12_house3,
+      img13_house3,
+      img14_house3,
+      img15_house3,
+      img16_house3,
     ],
   },
 ];

@@ -1,14 +1,10 @@
 // HOUSE 1 ==========================================================================
-import house1_front from "./assets/images/render/lançamento-capa.jpg";
-import img1_house1 from "./assets/images/render/LANÇAMENTO02.jpg";
-
-// HOUSE 2 ==========================================================================
-import house2_front from "./assets/images/CASA-11A/front_11A.jpg";
-import img1_house2 from "./assets/images/CASA-11A/2.jpg";
-
-// HOUSE 3 ==========================================================================
-import house3_front from "./assets/images/futureProjects/F2/F2-1.jpg";
-import img1_house3 from "./assets/images/CASA-11A/5.jpg";
+import house1_front from "./assets/images/Releases/1.jpg";
+import img1_house1 from "./assets/images/Releases/1.jpg";
+import img2_house1 from "./assets/images/Releases/2.jpg";
+import img3_house1 from "./assets/images/Releases/3.jpg";
+import img4_house1 from "./assets/images/Releases/4.jpg";
+import img5_house1 from "./assets/images/Releases/5.jpg";
 
 let housesReleases = [
   {
@@ -21,20 +17,7 @@ let housesReleases = [
     distinctio quos repellat consequuntur, ea commodi illum optio
     omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
     Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusduatur nisi aliquidluptatibus. Magnam
-    nisi magni accusantium, minima enim ipsa dolorum voluptates neque
-    sit, dicta voluptate aliquam debitis, eius ducimus! Nemo non porro
-    excepturi? Explicabo pariatur conseqigendi
-    iure nihil. Aliquam quasi quis temporibus. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Sed, ducimus hic error velit
-    libero aut tempora ut porro iste distinctio quos repellat
-    consequuntur, ea commodi illum optio omnis modi voluptatum.
-    Commodi ex eos numquam enim dicta eum? Ducimus rem cum recusandae
-    distinctio. Vero, quis quidem. Corrupti dolorum, dicta ducimus
-    officia illum quam exercitationem alias, quibusdam nemo facilis,
-    laboriosam distinctio incidunt? Possimus modi iusto amet id
-    aliquid quaerat dolorem voluptatibus.`,
+    dolorum, dicta ducimus officia .`,
     front_img: house1_front,
     rooms: 5,
     bathrooms: 2,
@@ -42,117 +25,7 @@ let housesReleases = [
     parking_space: 3,
     building_area: "280m²",
     land_area: "180m²",
-    imgs: [
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house1,
-    ],
-  },
-  {
-    id: 1,
-    name: "oi",
-    neighborhood: "ibituruna",
-    type: "releases",
-    front_img: house2_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minima enim ipsa dolorum voluptates neque
-    sit, dicta voluptate aliquam debitis, eius ducimus! Nemo non porro
-    excepturi? Explicabo pariatur consequatur nisi aliquid officiis
-    earum minima debitis doloribus vitae quae aperiam excepturi ipsa
-    quod, in quaerat accusamus ea facilis adipisci perferendis
-    repudiandae, repellendus maiores asperiores. Dolore, corrupti
-    provident? Excepturi suscipit alias, veniam sunt error tenetur
-    autem harum laudantium ullam inventore adipisci velit vitae omnis
-    corrupti libero amet ipsum expedita repellat dignissimos eligendi
-    iure nihil. Aliquam quasi quis temporibus. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Sed, ducimus hic error velit
-    libero aut tempora ut porro iste distinctio quos repellat
-    consequuntur, ea commodi illum optio omnis modi voluptatum.
-    Commodi ex eos numquam enim dicta eum? Ducimus rem cum recusandae
-    distinctio. Vero, quis quidem. Corrupti dolorum, dicta ducimus
-    officia illum quam exercitationem alias, quibusdam nemo facilis,
-    laboriosam distinctio incidunt? Possimus modi iusto amet id
-    aliquid quaerat dolorem voluptatibus.`,
-    rooms: 5,
-    bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
-    land_area: "180m²",
-    imgs: [
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
-    ],
-  },
-  {
-    id: 2,
-    name: "casa 876d",
-    neighborhood: "são luiz",
-    type: "releases",
-    front_img: house3_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minima enim ipsa dolorum voluptates neque
-    sit, dicta voluptate aliquam debitis, eius ducimus! Nemo non porro
-    excepturi? Explicabo pariatur consequatur nisi aliquid officiis
-    earum minima debitis doloribus vitae quae aperiam excepturi ipsa
-    quod, in quaerat accusamus ea facilis adipisci perferendis
-    repudiandae, repellendus maiores asperiores. Dolore, corrupti
-    provident? Excepturi suscipit alias, veniam sunt error tenetur
-    autem harum laudantium ullam inventore adipisci velit vitae omnis
-    corrupti libero amet ipsum expedita repellat dignissimos eligendi
-    iure nihil. Aliquam quasi quis temporibus. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Sed, ducimus hic error velit
-    libero aut tempora ut porro iste distinctio quos repellat
-    consequuntur, ea commodi illum optio omnis modi voluptatum.
-    Commodi ex eos numquam enim dicta eum? Ducimus rem cum recusandae
-    distinctio. Vero, quis quidem. Corrupti dolorum, dicta ducimus
-    officia illum quam exercitationem alias, quibusdam nemo facilis,
-    laboriosam distinctio incidunt? Possimus modi iusto amet id
-    aliquid quaerat dolorem voluptatibus.`,
-    rooms: 5,
-    bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
-    land_area: "180m²",
-    imgs: [
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house2,
-      img1_house3,
-      img1_house2,
-      img1_house3,
-    ],
+    imgs: [img1_house1, img2_house1, img3_house1, img4_house1, img5_house1],
   },
 ];
 

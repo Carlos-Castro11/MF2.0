@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./Home.module.css";
 
 import Slider from "../Slider/Slider";
+import imgSlide from "../../assets/images/Releases/1.jpg";
+import imgSlide2 from "../../assets/images/Releases/2.jpg";
+import imgSlide3 from "../../assets/images/Releases/3.jpg";
+import imgSlide4 from "../../assets/images/Releases/4.jpg";
 
 // HOOKS
 import useMedia from "../../Hooks/useMedia";
@@ -12,10 +16,15 @@ import adImg from "../../assets/images/ad.jpg";
 
 const Home = () => {
   const mobile = useMedia("(max-width: 750px)");
-
+  const slides = [
+    { id: "1", image: imgSlide },
+    { id: "2", image: imgSlide2 },
+    { id: "3", image: imgSlide3 },
+    { id: "4", image: imgSlide4 },
+  ];
   return (
     <>
-      <Slider />
+      <Slider slides={slides} />
       <main className={`animeLeft`}>
         {/* ABOUT */}
         <div className={`${styles.about} container`}>

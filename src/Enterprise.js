@@ -58,15 +58,15 @@ let housesEnterprises = [
     type: "enterprises",
     about: `Casa nova de alto padrão á venda no Jardim Liberdade toda em marcenaria!
     
-    Localizada próxima ao pa rque municipal.
-    
+    Localizada próxima ao parque municipal.
+
     Casa com 3 dormitórios, sendo uma suíte com armário e 2 semi-suítes no primeiro pavimento; sala para dois ambientes com painel de TV e aparador, lavabo, cozinha com armários e área de serviço coberta com armários e espaço gourmet no térreo. 2 vagas de garagem.
     
     Acabamento de primeira linha, vale a pena conferir!
     
     Adriana Finelli
     CRECI MGJ-6438
-    📱(38) 9 9 9917-8079.`,
+    (38) 9 9 9917-8079.`,
     front_img: house1_front,
     rooms: 3,
     bathrooms: 3,
@@ -109,7 +109,7 @@ let housesEnterprises = [
     
     Adriana Finelli
     CRECI MGJ-6438
-    📱(38) 9 9917-8079.`,
+    (38) 9 9917-8079.`,
     rooms: 3,
     bathrooms: 3,
     class: 1,
@@ -144,7 +144,7 @@ let housesEnterprises = [
     
     Adriana Finelli
     CRECI MGJ-6438
-    📱(38) 9 9917-8079.`,
+    (38) 9 9917-8079.`,
     rooms: 5,
     bathrooms: 2,
     class: 3,

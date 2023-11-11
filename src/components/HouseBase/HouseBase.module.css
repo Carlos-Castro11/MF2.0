@@ -56,6 +56,8 @@
 .infoText {
   color: var(--blackT);
   font-size: 1.1rem;
+  white-space: pre-line;
+  font-size: 1.2rem;
 }
 
 .details h5 {

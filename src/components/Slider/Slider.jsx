@@ -2,21 +2,8 @@ import React from "react";
 import styles from "./Slider.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import teste from "../../assets/images/render/LANÇAMENTO04.jpg";
-import teste2 from "../../assets/images/render/LANÇAMENTO03.jpg";
-import teste3 from "../../assets/images/render/LANÇAMENTO09.jpg";
-import teste4 from "../../assets/images/render/LANÇAMENTO07.jpg";
 
-// HOOKS
-
-const slides = [
-  { id: "1", image: teste },
-  { id: "2", image: teste2 },
-  { id: "3", image: teste3 },
-  { id: "4", image: teste4 },
-];
-
-const Slider = () => {
+const Slider = ({ slides }) => {
   const [x, setX] = React.useState(2);
 
   React.useEffect(() => {

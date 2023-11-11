@@ -3,8 +3,10 @@
   margin: 1rem auto;
   background: rgb(214, 207, 207);
   box-shadow: 0px 0px 3px black;
-  padding: 1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
   border-radius: 5px;
+  position: relative;
 }
 
 .sliderImg {
@@ -12,13 +14,15 @@
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 0px 2px black;
+  margin-bottom: 1.7rem;
+  margin-top: 1.7rem;
 }
 
 .sampleSlider [class^="swiper-button-"]::after {
   font-size: 20px;
   font-weight: bold;
-  color: white;
-  background: var(--gray);
+  color: var(--gray);
+  background: rgb(214, 207, 207);
   padding: 0.8rem;
   border-radius: 30%;
   box-shadow: 0px 0px 2px black;
@@ -44,6 +48,29 @@
 @media (max-width: 750px) {
   .containerSlider {
     margin: 0rem auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerSlider {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  .sliderImg {
+    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
+  }
+
+  .sliderWrapper {
+    :global(.swiper-pagination-bullet) {
+      height: 0.2rem;
+    }
+  }
+
+  .sampleSlider [class^="swiper-button-"]::after {
+    font-size: 15px;
+    padding: 0.7rem;
   }
 }
 

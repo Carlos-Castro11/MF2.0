@@ -20,7 +20,7 @@ const Enterprises = () => {
         <Route
           exact
           path="/:id"
-          element={<HouseBase houses={housesEnterprises} />}
+          element={<HouseBase houses={housesEnterprises} small4={true} />}
         />
         <Route path="*" element={<NotFound />} />
       </Routes>

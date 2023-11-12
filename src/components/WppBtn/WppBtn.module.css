@@ -3,6 +3,15 @@
   bottom: 1rem;
   left: 2rem;
   z-index: 999999;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.wppBtnInvisible {
+  opacity: 0;
+  transform: translateY(1rem);
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .wppBtn img {

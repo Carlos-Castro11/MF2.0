@@ -7,7 +7,7 @@ import PopUp from "../PopUp/PopUp";
 // CONTEXT
 import { PopUpContext } from "../../PopUpContext";
 
-const HouseBase = ({ houses }) => {
+const HouseBase = ({ houses, small4 }) => {
   const { popUpActive } = React.useContext(PopUpContext);
   const { setPopUpActive } = React.useContext(PopUpContext);
   const { id } = useParams();
@@ -35,7 +35,9 @@ const HouseBase = ({ houses }) => {
               <div className={styles.mainImg}>
                 <img ref={newImg} src={activeImg} alt="" />
               </div>
-              <div className={styles.smallImg}>
+              <div
+                className={`${styles.smallImg} ${small4 && styles.smallImg4}`}
+              >
                 {houses[id].imgs.map((item) => (
                   <div>
                     <img onClick={handleClick} src={item} alt="" />

@@ -6,8 +6,33 @@ import logo from "../../assets/images/Logo.svg";
 import instagram from "../../assets/icons/instagram.svg";
 import whatsapp from "../../assets/icons/whatsapp.svg";
 import email from "../../assets/icons/email.svg";
+// Hooks
+import useMedia from "../../Hooks/useMedia";
+// Context
+import { PopUpContext } from "../../PopUpContext";
 
 const Footer = () => {
+  const mobile = useMedia("(max-width: 750px)");
+  const { setFooterVisible } = React.useContext(PopUpContext);
+  const windowHalf2 = window.innerHeight * 0.8;
+  const handleHeight = () => {
+    const footer = document.querySelector("#footer");
+    const x = 170;
+    const y = 0;
+    const footerTop = footer.getBoundingClientRect().top;
+    const isFooterVisible = footerTop - windowHalf2 < 200;
+    const isFooterInvisible = footerTop - windowHalf2 > (mobile ? x : y);
+    if (isFooterVisible) {
+      setFooterVisible(true);
+    }
+    if (isFooterInvisible) {
+      setFooterVisible(false);
+    }
+  };
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleHeight);
+  }, []);
+
   return (
     <>
       <footer id="footer" className={styles.footer}>

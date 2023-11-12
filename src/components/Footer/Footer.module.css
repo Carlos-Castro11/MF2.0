@@ -2,7 +2,6 @@
   padding: 2rem;
   position: relative;
   background: var(--gray);
-  z-index: 999999;
 }
 
 .footer::after {
@@ -51,7 +50,6 @@
 .rights {
   background: var(--yellow);
   position: relative;
-  z-index: 99999999;
   height: 4rem;
   place-content: center;
   align-items: center;

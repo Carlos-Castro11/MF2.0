@@ -4,27 +4,47 @@
   bottom: 1rem;
   z-index: 999999;
   background-color: rgb(214, 207, 207);
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 50%;
   border: 2px solid var(--gray);
   display: flex;
   align-items: center;
   place-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(2rem);
+  transition: all 0.2s ease-in-out;
 }
 
-@media (max-width: 750px) {
-  .toTopBtn img {
-    max-width: 90%;
-  }
+.toTopBtnTrue {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transform: translateY(0rem);
+}
 
-  .toTopBtn {
-    padding: 0.4rem;
-    border-radius: 50%;
-  }
+.toTopBtnFooter {
+  bottom: 5.5rem;
+}
+
+.toTopBtn img {
+  animation: goToTop 1.2s linear infinite alternate-reverse;
+  max-width: 90%;
 }
 
 @media (max-width: 500px) {
   .toTopBtn {
     padding: 0.2rem;
+  }
+}
+
+@keyframes goToTop {
+  0% {
+    transform: translateY(-0.2rem);
+  }
+  100% {
+    transform: translateY(0.2rem);
   }
 }

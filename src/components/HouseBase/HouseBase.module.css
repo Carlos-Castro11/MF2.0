@@ -36,6 +36,10 @@
   margin-bottom: 2.5rem;
 }
 
+.smallImg4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .smallImg img {
   border-radius: 0.5rem;
   cursor: pointer;

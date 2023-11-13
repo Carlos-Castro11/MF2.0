@@ -2,12 +2,16 @@ import React from "react";
 import styles from "./Base.module.css";
 import { Link } from "react-router-dom";
 
-const Base = ({ houses, titlePage }) => {
+const Base = ({ houses, titlePage, releases }) => {
   return (
     <>
       <div className={`container animeLeft`}>
         <h1 className={styles.title}>{titlePage}</h1>
-        <div className={styles.bodyContent}>
+        <div
+          className={`${styles.bodyContent} ${
+            releases && styles.bodyContentReleases
+          }`}
+        >
           {houses.map((house) => (
             <Link key={house.id} to={`/${house.type}/${house.id}`}>
               <div className={styles.image} key={house.id}>

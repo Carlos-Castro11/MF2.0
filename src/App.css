@@ -92,6 +92,9 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+}
+
 @media (min-width: 1500px) {
   .container {
     max-width: 90rem;

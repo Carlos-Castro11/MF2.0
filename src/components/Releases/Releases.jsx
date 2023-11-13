@@ -14,7 +14,13 @@ const Releases = () => {
         <Route
           exact
           path="/"
-          element={<Base houses={housesReleases} titlePage={"Lançamentos"} />}
+          element={
+            <Base
+              houses={housesReleases}
+              titlePage={"Lançamentos"}
+              releases={true}
+            />
+          }
         />
         <Route path="/:id" element={<HouseBase houses={housesReleases} />} />
         <Route path="*" element={<NotFound />} />

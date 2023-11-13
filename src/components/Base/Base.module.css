@@ -281,7 +281,14 @@
     margin-bottom: 1.75rem;
   }
 
+  .bodyContentReleases {
+    margin-bottom: 5rem;
+  }
+
   .image > h2 {
     font-size: 1rem;
+  }
+  .bodyContentReleases .image h2 {
+    font-size: 0.95rem;
   }
 }

@@ -7,7 +7,7 @@ import PopUp from "../PopUp/PopUp";
 // CONTEXT
 import { PopUpContext } from "../../PopUpContext";
 
-const HouseBase = ({ houses, small4 }) => {
+const HouseBase = ({ houses, small4, future }) => {
   const { popUpActive } = React.useContext(PopUpContext);
   const { setPopUpActive } = React.useContext(PopUpContext);
   const { id } = useParams();
@@ -53,9 +53,11 @@ const HouseBase = ({ houses, small4 }) => {
                 <p>
                   Área Construída<span>{houses[id].building_area}</span>
                 </p>
-                <p>
-                  Área do Terreno <span>{houses[id].land_area}</span>
-                </p>
+                {future ? null : (
+                  <p>
+                    Área do Terreno <span>{houses[id].land_area}</span>
+                  </p>
+                )}
                 <p>
                   Dormitórios <span>{houses[id].rooms}</span>
                 </p>

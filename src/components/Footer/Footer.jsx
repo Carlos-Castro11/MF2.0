@@ -52,7 +52,11 @@ const Footer = () => {
                   <span>(38) 9 9917-8079</span>
                 </li>
               </a>
-              <a target="_blank" rel="noreferrer" href="https://instagram.com">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/marquesefinelliemp"
+              >
                 <li className={styles.contactItem}>
                   <img src={instagram} alt="" />
                   <span>@marques&finelli_empreendimentos</span>

@@ -55,6 +55,17 @@
 .houseInfo h3 {
   font-size: 2rem;
   color: var(--blueD);
+  position: relative;
+}
+
+.houseInfo h3::after {
+  content: "";
+  position: absolute;
+  background: var(--yellow);
+  width: 13.5rem;
+  height: 1.75px;
+  left: 0;
+  bottom: 0;
 }
 
 .infoText {
@@ -84,8 +95,9 @@
   font-weight: bold;
 }
 
-.details p:nth-child(7) {
+.details p:last-of-type {
   border: none;
+  margin-bottom: 2rem;
 }
 
 /* RESPONSIVE ======================================================================*/
@@ -97,6 +109,10 @@
 
   .title {
     font-size: 2.5rem;
+  }
+
+  .details p:last-of-type {
+    margin-bottom: 1rem;
   }
 }
 

@@ -36,19 +36,21 @@ let housesFutureProjects = [
     name: `casa térrea 01`,
     neighborhood: "jd. liberdade",
     type: "futureProjects",
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusduatur nisi aliquidluptatibus.`,
+    about: `Casa térrea localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet, 3 dormitórios sendo 1 suíte e varanda.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
     front_img: house1_front,
-    rooms: 5,
+    rooms: 3,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "95,73m²",
     land_area: "180m²",
     imgs: [img1_house1, img2_house1, img3_house1],
   },
@@ -58,18 +60,20 @@ let housesFutureProjects = [
     neighborhood: "jd. liberdade",
     type: "futureProjects",
     front_img: house2_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam dist.`,
-    rooms: 5,
+    about: `Casa térrea localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet, 2 dormitórios sendo 1 suíte e varanda.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
+    rooms: 2,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "75,38m²",
     land_area: "180m²",
     imgs: [img1_house2, img2_house2, img3_house2],
   },
@@ -79,20 +83,20 @@ let housesFutureProjects = [
     neighborhood: "jd. liberdade",
     type: "futureProjects",
     front_img: house3_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minim.`,
-    rooms: 5,
+    about: `Casa térrea localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet, 2 dormitórios sendo 1 suíte e varanda.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
+    rooms: 2,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "75,38m²",
     land_area: "180m²",
     imgs: [img1_house3, img2_house3],
   },
@@ -102,20 +106,20 @@ let housesFutureProjects = [
     neighborhood: "jd. liberdade",
     type: "futureProjects",
     front_img: house4_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minim.`,
-    rooms: 5,
+    about: `Casa térrea localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet e 3 dormitórios sendo 1 suíte.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
+    rooms: 3,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "83,94m²",
     land_area: "180m²",
     imgs: [img1_house4, img2_house4],
   },
@@ -125,20 +129,20 @@ let housesFutureProjects = [
     neighborhood: "jd. liberdade",
     type: "futureProjects",
     front_img: house5_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minim.`,
-    rooms: 5,
+    about: `Casa térrea de esquina localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet e 2 dormitórios sendo 1 suíte.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
+    rooms: 2,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "80,16m²",
     land_area: "180m²",
     imgs: [img1_house5, img2_house5],
   },
@@ -148,20 +152,20 @@ let housesFutureProjects = [
     neighborhood: "jd. liberdade",
     type: "futureProjects",
     front_img: house6_front,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia illum quam exercitationem alias,
-    quibusdam nemo facilis, laboriosam distinctio incidunt? Possimus
-    modi iusto amet id aliquid quaerat dolorem voluptatibus. Magnam
-    nisi magni accusantium, minim.`,
-    rooms: 5,
+    about: `Casa térrea localizada no Jardim Liberdade!
+
+    Casa com sala para dois ambientes e lavabo, cozinha, área de serviço, 2 vagas de garagem, área gourmet, 3 dormitórios sendo 1 suíte e varanda.
+
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079`,
+    rooms: 3,
     bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
+    class: 1,
+    parking_space: 2,
+    building_area: "95,73m²",
     land_area: "180m²",
     imgs: [img1_house6, img2_house6],
   },

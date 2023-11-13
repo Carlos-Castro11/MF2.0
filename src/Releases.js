@@ -9,17 +9,22 @@ import img5_house1 from "./assets/images/Releases/5.jpg";
 let housesReleases = [
   {
     id: 0,
-    name: `CRUZEIRO`,
-    neighborhood: "jd. liberdade",
+    name: `prédio comercial`,
+    neighborhood: "ibituruna",
     type: "releases",
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-    ducimus hic error velit libero aut tempora ut porro iste
-    distinctio quos repellat consequuntur, ea commodi illum optio
-    omnis modi voluptatum. Commodi ex eos numquam enim dicta eum?
-    Ducimus rem cum recusandae distinctio. Vero, quis quidem. Corrupti
-    dolorum, dicta ducimus officia .`,
+    about: `Prédio comercial com 12 salas com 1 banheiro, que serão disponibilizadas para locação futuramente.
+    
+    Localizada na melhor parte comercial do Ibituruna, com arquitetura moderna, alto padrão e acabamento de primeira linha.
+
+    Vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9 9917-8079.
+    `,
+
     front_img: house1_front,
-    rooms: 5,
+    rooms: 12,
     bathrooms: 2,
     class: 3,
     parking_space: 3,

@@ -71,9 +71,9 @@ let housesEnterprises = [
     rooms: 3,
     bathrooms: 3,
     class: 1,
-    parking_space: 3,
-    building_area: "280m²",
-    land_area: "180m²",
+    parking_space: 2,
+    building_area: "109,08m²",
+    land_area: "135,50m²",
     imgs: [
       house1_front,
       img1_house1,
@@ -113,9 +113,9 @@ let housesEnterprises = [
     rooms: 3,
     bathrooms: 3,
     class: 1,
-    parking_space: 3,
-    building_area: "350m²",
-    land_area: "450m²",
+    parking_space: 2,
+    building_area: "116,92m²",
+    land_area: "136,50m²",
     imgs: [
       img1_house2,
       img2_house2,
@@ -138,19 +138,19 @@ let housesEnterprises = [
     front_img: house3_front,
     about: `Casa nova de alto padrão no Jardim Liberdade!
 
-    Casa com 3 dormitórios, sendo uma suíte com armário e 2 semi-suítes no primeiro pavimento; sala para dois ambientes, lavabo, cozinha com armários e área de serviço coberta com armários e espaço gourmet no térreo. 2 vagas de garagem.
+    Casa com 3 dormitórios, sendo uma suíte com armário e 2 semi-suítes no primeiro pavimento; sala para dois ambientes, lavabo, cozinha com armários e área de serviço coberta com armários e espaço gourmet no térreo com quintal amplo. 2 vagas de garagem.
     
     Acabamento de primeira linha, vale a pena conferir!
     
     Adriana Finelli
     CRECI MGJ-6438
     (38) 9 9917-8079.`,
-    rooms: 5,
-    bathrooms: 2,
-    class: 3,
-    parking_space: 3,
-    building_area: "280m²",
-    land_area: "180m²",
+    rooms: 3,
+    bathrooms: 3,
+    class: 1,
+    parking_space: 2,
+    building_area: "117,34m²",
+    land_area: "185,50m²",
     imgs: [
       img1_house3,
       img2_house3,

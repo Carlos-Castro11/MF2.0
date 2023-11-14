@@ -4,10 +4,13 @@ import styles from "./PopUp.module.css";
 // CONTEXT
 import { PopUpContext } from "../../PopUpContext";
 
-const PopUp = ({ src }) => {
+const PopUp = ({ src, houses }) => {
   const { popUpActive } = React.useContext(PopUpContext);
   const { setPopUpActive } = React.useContext(PopUpContext);
-
+  var slides = [{}];
+  houses.imgs.forEach((item) => {
+    slides.push({ id: +1, image: item });
+  });
   return (
     <div className={styles.popUp}>
       <button

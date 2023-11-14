@@ -3,7 +3,7 @@ import styles from "./Slider.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, loop }) => {
   const [x, setX] = React.useState(2);
 
   React.useEffect(() => {
@@ -27,7 +27,7 @@ const Slider = ({ slides }) => {
         <Swiper
           className={`${styles.sampleSlider}`}
           slidesPerView={x}
-          loop={true}
+          loop={loop}
           autoplay={{
             delay: 3000,
           }}

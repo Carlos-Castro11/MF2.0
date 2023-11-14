@@ -27,7 +27,7 @@ const HouseBase = ({ houses, small4, future }) => {
   else
     return (
       <>
-        {popUpActive ? <PopUp src={activeImg} /> : null}
+        {popUpActive ? <PopUp src={activeImg} houses={houses[id]} /> : null}
         <section className="container animeLeft">
           <h1 className={styles.title}>{houses[id].name}</h1>
           <div className={styles.houseContent}>
@@ -39,7 +39,7 @@ const HouseBase = ({ houses, small4, future }) => {
                 className={`${styles.smallImg} ${small4 && styles.smallImg4}`}
               >
                 {houses[id].imgs.map((item) => (
-                  <div>
+                  <div key={item}>
                     <img onClick={handleClick} src={item} alt="" />
                   </div>
                 ))}

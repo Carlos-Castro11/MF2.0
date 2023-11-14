@@ -28,7 +28,7 @@ const Home = () => {
   ];
   return (
     <>
-      <Slider slides={slides} />
+      <Slider slides={slides} loop={true} />
       <main className={`animeLeft`}>
         {/* ABOUT */}
         <div className={`${styles.about} container`}>

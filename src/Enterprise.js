@@ -35,7 +35,7 @@ import img11_house2 from "./assets/images/CASA-11A/11.jpg";
 // HOUSE 3 ==========================================================================
 import house3_front from "./assets/images/CASA-11B/house3_front.jpg";
 import img1_house3 from "./assets/images/CASA-11B/house3_front.jpg";
-import img2_house3 from "./assets/images/CASA-11B/3.jpg";
+import img2_house3 from "./assets/images/CASA-11B/2.jpg";
 import img3_house3 from "./assets/images/CASA-11B/3.jpg";
 import img4_house3 from "./assets/images/CASA-11B/4.jpg";
 import img5_house3 from "./assets/images/CASA-11B/5.jpg";
@@ -77,22 +77,22 @@ let housesEnterprises = [
     imgs: [
       house1_front,
       img1_house1,
+      img14_house1,
       img2_house1,
       img3_house1,
+      img12_house1,
       img4_house1,
       img5_house1,
-      img6_house1,
-      img7_house1,
       img8_house1,
+      img7_house1,
       img9_house1,
-      img10_house1,
+      img6_house1,
       img11_house1,
-      img12_house1,
-      img13_house1,
-      img14_house1,
       img15_house1,
-      img16_house1,
+      img10_house1,
       img17_house1,
+      img13_house1,
+      img16_house1,
     ],
   },
   {
@@ -121,10 +121,10 @@ let housesEnterprises = [
       img2_house2,
       img3_house2,
       img4_house2,
-      img5_house2,
-      img6_house2,
       img7_house2,
       img8_house2,
+      img6_house2,
+      img5_house2,
       img9_house2,
       img10_house2,
       img11_house2,
@@ -154,16 +154,15 @@ let housesEnterprises = [
     imgs: [
       img1_house3,
       img2_house3,
-      img3_house3,
       img4_house3,
-      img5_house3,
-      img7_house3,
-      img8_house3,
-      img9_house3,
-      img10_house3,
-      img11_house3,
-      img12_house3,
+      img3_house3,
       img13_house3,
+      img12_house3,
+      img9_house3,
+      img11_house3,
+      img10_house3,
+      img7_house3,
+      img5_house3,
       img14_house3,
       img15_house3,
       img16_house3,

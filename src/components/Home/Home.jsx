@@ -4,8 +4,10 @@ import styles from "./Home.module.css";
 import Slider from "../Slider/Slider";
 import imgSlide from "../../assets/images/Releases/1.jpg";
 import imgSlide2 from "../../assets/images/Releases/2.jpg";
-import imgSlide3 from "../../assets/images/Releases/3.jpg";
-import imgSlide4 from "../../assets/images/Releases/4.jpg";
+import imgSlide3 from "../../assets/images/CASA-11A/front_11A.jpg";
+import imgSlide4 from "../../assets/images/CASA-11B/house3_front.jpg";
+import imgSlide5 from "../../assets/images/395A/front_395A.jpg";
+import imgSlide6 from "../../assets/images/395A/img_4_395A.jpg";
 
 // HOOKS
 import useMedia from "../../Hooks/useMedia";
@@ -21,6 +23,8 @@ const Home = () => {
     { id: "2", image: imgSlide2 },
     { id: "3", image: imgSlide3 },
     { id: "4", image: imgSlide4 },
+    { id: "5", image: imgSlide5 },
+    { id: "6", image: imgSlide6 },
   ];
   return (
     <>

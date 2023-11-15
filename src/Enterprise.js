@@ -106,6 +106,46 @@ let housesEnterprises = [
   },
   {
     id: 1,
+    name: "casa 11",
+    neighborhood: "jd. liberdade",
+    type: "enterprises",
+    front_img: house2_front,
+    about: `Casa nova de alto padrão no Jardim Liberdade!
+
+    Casa com 3 dormitórios, sendo uma suíte com armário e 2 semi-suítes no primeiro pavimento; sala para dois ambientes, lavabo, cozinha com armários e área de serviço coberta com armários e espaço gourmet no térreo. 2 vagas de garagem.
+    
+    Acabamento de primeira linha, vale a pena conferir!
+    
+    Adriana Finelli
+    CRECI MGJ-6438
+    (38) 9 9917-8079.`,
+    rooms: 3,
+    bathrooms: 3,
+    class: 1,
+    parking_space: 2,
+    building_area: "117,77m²",
+    land_area: "132,75m²",
+    imgs: [
+      img1_house2,
+      img3_house2,
+      img10_house2,
+      img4_house2,
+      img7_house2,
+      img8_house2,
+      img6_house2,
+      img10_house3,
+      img5_house2,
+      img9_house2,
+      img14_house2,
+      img13_house2,
+      img15_house2,
+      img12_house2,
+      img11_house2,
+      img16_house2,
+    ],
+  },
+  {
+    id: 2,
     name: "casa 11a",
     neighborhood: "jd. liberdade",
     type: "enterprises",
@@ -146,7 +186,7 @@ let housesEnterprises = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "casa 11b",
     neighborhood: "jd. liberdade",
     type: "enterprises",

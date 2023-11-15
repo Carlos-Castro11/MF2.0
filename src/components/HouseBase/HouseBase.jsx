@@ -19,6 +19,7 @@ const HouseBase = ({ houses, small4, future }) => {
     setActiveImg(img_src);
   }
   React.useEffect(() => {
+    setPopUpActive(false);
     newImg.current.addEventListener("click", () => {
       setPopUpActive(true);
     });

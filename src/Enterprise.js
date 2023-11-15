@@ -31,6 +31,11 @@ import img8_house2 from "./assets/images/CASA-11A/8.jpg";
 import img9_house2 from "./assets/images/CASA-11A/9.jpg";
 import img10_house2 from "./assets/images/CASA-11A/10.jpg";
 import img11_house2 from "./assets/images/CASA-11A/11.jpg";
+import img12_house2 from "./assets/images/CASA-11A/12.jpg";
+import img13_house2 from "./assets/images/CASA-11A/13.jpg";
+import img14_house2 from "./assets/images/CASA-11A/14.jpg";
+import img15_house2 from "./assets/images/CASA-11A/15.jpg";
+import img16_house2 from "./assets/images/CASA-11A/16.jpg";
 
 // HOUSE 3 ==========================================================================
 import house3_front from "./assets/images/CASA-11B/house3_front.jpg";
@@ -40,7 +45,6 @@ import img3_house3 from "./assets/images/CASA-11B/3.jpg";
 import img4_house3 from "./assets/images/CASA-11B/4.jpg";
 import img5_house3 from "./assets/images/CASA-11B/5.jpg";
 import img7_house3 from "./assets/images/CASA-11B/7.jpg";
-import img8_house3 from "./assets/images/CASA-11B/8.jpg";
 import img9_house3 from "./assets/images/CASA-11B/9.jpg";
 import img10_house3 from "./assets/images/CASA-11B/10.jpg";
 import img11_house3 from "./assets/images/CASA-11B/11.jpg";
@@ -49,6 +53,11 @@ import img13_house3 from "./assets/images/CASA-11B/13.jpg";
 import img14_house3 from "./assets/images/CASA-11B/14.jpg";
 import img15_house3 from "./assets/images/CASA-11B/15.jpg";
 import img16_house3 from "./assets/images/CASA-11B/16.jpg";
+import img17_house3 from "./assets/images/CASA-11B/17.jpg";
+import img18_house3 from "./assets/images/CASA-11B/18.jpg";
+import img20_house3 from "./assets/images/CASA-11B/20.jpg";
+import img21_house3 from "./assets/images/CASA-11B/21.jpg";
+import img22_house3 from "./assets/images/CASA-11B/22.jpg";
 
 let housesEnterprises = [
   {
@@ -120,14 +129,20 @@ let housesEnterprises = [
       img1_house2,
       img2_house2,
       img3_house2,
+      img10_house2,
       img4_house2,
       img7_house2,
       img8_house2,
       img6_house2,
+      img10_house3,
       img5_house2,
       img9_house2,
-      img10_house2,
+      img14_house2,
+      img13_house2,
+      img15_house2,
+      img12_house2,
       img11_house2,
+      img16_house2,
     ],
   },
   {
@@ -164,8 +179,13 @@ let housesEnterprises = [
       img7_house3,
       img5_house3,
       img14_house3,
+      img17_house3,
+      img18_house3,
+      img20_house3,
+      img22_house3,
       img15_house3,
       img16_house3,
+      img21_house3,
     ],
   },
 ];

@@ -19,12 +19,12 @@ import adImg from "../../assets/images/ad.jpg";
 const Home = () => {
   const mobile = useMedia("(max-width: 750px)");
   const slides = [
-    { id: "1", image: imgSlide },
-    { id: "2", image: imgSlide2 },
-    { id: "3", image: imgSlide3 },
-    { id: "4", image: imgSlide4 },
-    { id: "5", image: imgSlide5 },
-    { id: "6", image: imgSlide6 },
+    { id: "0", image: imgSlide, type: "releases" },
+    { id: "0", image: imgSlide2, type: "releases" },
+    { id: "2", image: imgSlide3, type: "enterprises" },
+    { id: "3", image: imgSlide4, type: "enterprises" },
+    { id: "0", image: imgSlide5, type: "enterprises" },
+    { id: "0", image: imgSlide6, type: "enterprises" },
   ];
   return (
     <>

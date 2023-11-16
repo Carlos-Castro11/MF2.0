@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Slider.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 const Slider = ({ slides, loop }) => {
   const [x, setX] = React.useState(2);
@@ -36,8 +37,14 @@ const Slider = ({ slides, loop }) => {
           navigation={true}
         >
           {slides.map((item) => (
-            <SwiperSlide key={item.id}>
-              <img src={item.image} alt="slider" className={styles.sliderImg} />
+            <SwiperSlide key={item.image}>
+              <Link to={`/${item.type}/${item.id}`}>
+                <img
+                  src={item.image}
+                  alt="slider"
+                  className={styles.sliderImg}
+                />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

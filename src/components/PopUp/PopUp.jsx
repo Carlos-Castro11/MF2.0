@@ -12,7 +12,7 @@ const PopUp = ({ src, houses }) => {
     slides.push({ id: +1, image: item });
   });
   return (
-    <div className={styles.popUp}>
+    <div className={`${styles.popUp} animeLeft`}>
       <button
         className={styles.btn}
         onClick={() => {
@@ -21,7 +21,7 @@ const PopUp = ({ src, houses }) => {
       >
         x
       </button>
-      <img className={styles.popUpImage} src={src} alt="" />
+      <img className={`${styles.popUpImage}`} src={src} alt="" />
     </div>
   );
 };

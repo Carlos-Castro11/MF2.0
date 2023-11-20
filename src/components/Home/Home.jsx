@@ -74,7 +74,7 @@ const Home = () => {
         </div>
         {/* LOCAL */}
         <div className={`${styles.local} container`}>
-          <h1 className="sectionTitle">LOCALIZAÇÃO</h1>
+          <h1 className="sectionTitle">LOCALIZAÇÃO - ESCRITÓRIO</h1>
           <iframe
             className="map"
             width="600"

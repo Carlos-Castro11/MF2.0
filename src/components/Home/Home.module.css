@@ -217,4 +217,8 @@ iframe {
   .local {
     margin-bottom: 1rem;
   }
+
+  .local h1 {
+    font-size: 1.6rem;
+  }
 }

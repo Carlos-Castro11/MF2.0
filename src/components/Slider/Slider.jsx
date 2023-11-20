@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Slider.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Slider = ({ slides, loop }) => {
   const [x, setX] = React.useState(2);
-
+  const navigate = useNavigate();
   React.useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 750) {
@@ -38,13 +38,24 @@ const Slider = ({ slides, loop }) => {
         >
           {slides.map((item) => (
             <SwiperSlide key={item.image}>
-              <Link to={`/${item.type}/${item.id}`}>
+              <div
+                onClick={() => {
+                  const res = window.confirm([
+                    "Você deseja ver esta casa completa?",
+                  ]);
+                  if (res) {
+                    navigate(`/${item.type}/${item.id}`);
+                  } else {
+                    navigate("/");
+                  }
+                }}
+              >
                 <img
                   src={item.image}
                   alt="slider"
                   className={styles.sliderImg}
                 />
-              </Link>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

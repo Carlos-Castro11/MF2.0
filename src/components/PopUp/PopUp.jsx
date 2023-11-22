@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./PopUp.module.css";
 
+// Icon
+import close from "../../assets/icons/close.svg";
+
 // CONTEXT
 import { PopUpContext } from "../../PopUpContext";
 
+// Slider
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const PopUp = ({ src, houses }) => {
-  const { popUpActive } = React.useContext(PopUpContext);
   const { setPopUpActive } = React.useContext(PopUpContext);
-  var slides = [{}];
-  houses.imgs.forEach((item) => {
-    slides.push({ id: +1, image: item });
-  });
   return (
     <div className={`${styles.popUp} animeLeft`}>
       <button
@@ -19,9 +20,24 @@ const PopUp = ({ src, houses }) => {
           setPopUpActive(false);
         }}
       >
-        x
+        <img src={close} alt="" />
       </button>
-      <img className={`${styles.popUpImage}`} src={src} alt="" />
+      {/* <img className={`${styles.popUpImage}`} src={src} alt="" /> */}
+
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{ clickable: true }}
+        navigation={true}
+        loop={true}
+        className={`${styles.popUpSlider} ${styles.sliderWrapper} ${styles.sampleSlider}`}
+      >
+        {houses.imgs.map((item) => (
+          <SwiperSlide key={item}>
+            <img src={item} alt="" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

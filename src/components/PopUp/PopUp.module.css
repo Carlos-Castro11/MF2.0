@@ -3,41 +3,108 @@
   height: 100%;
   width: 100%;
   top: 0px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   color: white;
   z-index: 99999999999999;
   display: flex;
-  place-content: center;
   align-items: center;
-}
-
-.popUpImage {
-  max-width: 70%;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 2px white;
+  place-content: center;
 }
 
 .btn {
   position: fixed;
   cursor: pointer;
-  top: 2rem;
-  right: 0rem;
-  margin-right: 5rem;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 0.4rem;
-  width: 30px;
+  top: 1rem;
+  right: 3.5rem;
+  border-radius: 50%;
   border: none;
+  z-index: 99;
+  padding: 0.8rem;
+  background-color: rgb(214, 207, 207);
 }
 
-@media (max-width: 750px) {
-  .popUpImage {
-    max-width: 100%;
+/* SLIDER ============================================*/
+
+.popUpSlider {
+  max-width: 75%;
+  border-radius: 0.5rem;
+}
+
+.sampleSlider [class^="swiper-button-"]::after {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--gray);
+  background: rgb(214, 207, 207);
+  padding: 0.875rem;
+  border-radius: 30%;
+  box-shadow: 0px 0px 3px black;
+}
+
+.sliderWrapper {
+  :global(.swiper-pagination-bullet) {
+    background: rgb(192, 192, 192);
+    border-radius: 0.5rem;
+    width: 1rem;
+    box-shadow: 0px 0px 3px black;
+    height: 0.3rem;
+    opacity: 1;
   }
-  .popUp {
-    padding: 1rem;
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: var(--blueP);
+    border-radius: 0.5rem;
+  }
+}
+
+/* RESPONSIVE =========================================*/
+@media (max-width: 750px) {
+  .popUpSlider {
+    max-width: 90%;
+  }
+
+  .btn {
+    right: 2.1rem;
+    top: 0.8rem;
+  }
+  .sampleSlider [class^="swiper-button-"]::after {
+    font-size: 20px;
+    padding: 0.875rem;
+  }
+
+  .sliderWrapper {
+    :global(.swiper-pagination-bullet) {
+      width: 0.875rem;
+      height: 0.3rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .popUpSlider {
+    max-width: 100%;
+    border-radius: 0rem;
+  }
+
+  .btn {
+    top: 1.25rem;
+    right: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .sampleSlider [class^="swiper-button-"]::after {
+    font-size: 17px;
+    padding: 0.75rem;
+  }
+
+  .sliderWrapper {
+    :global(.swiper-pagination-bullet) {
+      width: 0.8rem;
+      height: 0.3rem;
+    }
   }
   .btn {
-    right: -3rem;
+    padding: 0.675rem;
   }
 }

@@ -2,20 +2,17 @@
   max-width: 70rem;
   margin: 1rem auto;
   background: rgb(214, 207, 207);
-  box-shadow: 0px 0px 3px black;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  border-radius: 5px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 0.5rem;
   position: relative;
+  padding: 0.875rem;
 }
 
 .sliderImg {
   max-width: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   box-shadow: 0px 0px 2px black;
-  margin-bottom: 1.7rem;
-  margin-top: 1.7rem;
 }
 
 .sampleSlider [class^="swiper-button-"]::after {
@@ -31,7 +28,7 @@
 .sliderWrapper {
   :global(.swiper-pagination-bullet) {
     background: rgb(192, 192, 192);
-    box-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 2px black;
     border-radius: 0.5rem;
     width: 1.5rem;
     height: 0.3rem;
@@ -52,16 +49,6 @@
 }
 
 @media (max-width: 500px) {
-  .containerSlider {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-
-  .sliderImg {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
   .sliderWrapper {
     :global(.swiper-pagination-bullet) {
       height: 0.2rem;

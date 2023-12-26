@@ -15,7 +15,7 @@ const WppBtn = () => {
         className={`${styles.wppBtn} ${
           footerVisible && styles.wppBtnInvisible
         }`}
-        href="google.com"
+        href="https://wa.me/5538999178079" 
       >
         <img src={wpp} alt="" />
       </a>

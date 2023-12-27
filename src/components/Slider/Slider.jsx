@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 
 const Slider = ({ slides, loop }) => {
-  const [x, setX] = React.useState(2);
+  const [NumberSlides, setNumberSlides] = React.useState(2);
   const navigate = useNavigate();
   React.useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 750) {
-        setX(1);
+        setNumberSlides(1);
       } else {
-        setX(2);
+        setNumberSlides(2);
       }
     }
     handleResize();
@@ -27,7 +27,7 @@ const Slider = ({ slides, loop }) => {
       <div className={`${styles.containerSlider} ${styles.sliderWrapper}`}>
         <Swiper
           className={`${styles.sampleSlider}`}
-          slidesPerView={x}
+          slidesPerView={NumberSlides}
           loop={loop}
           autoplay={{
             delay: 3000,

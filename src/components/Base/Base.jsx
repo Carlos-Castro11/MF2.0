@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 const Base = ({ houses, titlePage, releases }) => {
   return (
     <>
-      <div className={`container animeLeft`}>
+      <div className={`container animeLeft ${releases && styles.containerRelease}`}>
         <h1 className={styles.title}>{titlePage}</h1>
         <div
-          className={`${styles.bodyContent} ${
-            releases && styles.bodyContentReleases
-          }`}
+          className={`${styles.bodyContent} ${releases && styles.bodyContentReleases
+            }`}
         >
           {houses.map((house) => (
             <Link key={house.id} to={`/${house.type}/${house.id}`}>

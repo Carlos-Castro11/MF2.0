@@ -79,13 +79,13 @@ const Footer = () => {
       <div className={styles.rights}>
         <div className={styles.clients}>
           <span>
-            Marques & Finelli Empreendimentos Imobiliários | 2023 © Todos os
+            Marques & Finelli | 2024 © Todos os
             direitos reservados.
           </span>
         </div>
         <div className={styles.devs}>
           <span>
-            Desenvolvido por © <strong>DEV BCM </strong>
+            Desenvolvido por <strong>Carlos Castro</strong>
           </span>
         </div>
       </div>
